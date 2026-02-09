@@ -3357,8 +3357,8 @@ function initializeTouchEvents() {
 
 // Adjust hotspot positions for different screen sizes
 function adjustHotspotPositions() {
-  const baseWidth = 813;
-  const baseHeight = 585;
+  const baseWidth = 1920;
+  const baseHeight = 1080;
   const currentWidth = window.innerWidth;
   const currentHeight = window.innerHeight;
   
@@ -3411,3 +3411,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // ... rest of your code ...
 });
+
