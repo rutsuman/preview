@@ -55,6 +55,55 @@ const MAPS = {
   map1: { image: "map.jpg" },
   map2: { image: "map2.jpg" },
   map3: { image: "map3.jpg" }
+
+    // Initially hide all hotspots
+  hotspots.forEach(hotspot => {
+    hotspot.style.opacity = '0';
+    hotspot.style.pointerEvents = 'none';
+  });
+  
+  // Function to position hotspots
+  function positionHotspots() {
+    // Get the actual rendered size of the image
+    const imgRect = mapImage.getBoundingClientRect();
+    
+    // Update container dimensions to match image exactly
+    container.style.width = imgRect.width + 'px';
+    container.style.height = imgRect.height + 'px';
+    
+    // Show and enable hotspots
+    hotspots.forEach(hotspot => {
+      hotspot.style.opacity = '1';
+      hotspot.style.pointerEvents = 'auto';
+    });
+    
+    console.log('Map initialized. Image size:', imgRect.width, 'x', imgRect.height);
+  }
+  
+  // Check if image is already loaded
+  if (mapImage.complete && mapImage.naturalHeight !== 0) {
+    positionHotspots();
+  } else {
+    // Wait for image to load
+    mapImage.addEventListener('load', positionHotspots);
+  }
+  
+  // Also reposition on window resize (with debounce)
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(positionHotspots, 250);
+  });
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initializeMap);
+
+// Also run on full page load as backup
+window.addEventListener('load', () => {
+  // Small delay to ensure everything is rendered
+  setTimeout(initializeMap, 100);
+});
 };
 
 function getMapForQuest(questId) {
@@ -3410,4 +3459,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeResponsiveBehaviors();
   
   // ... rest of your code ...
+
 });
