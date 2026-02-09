@@ -13,8 +13,11 @@ html, body {
 /* Map container */
 #map-container {
     position: relative;
-    width: 100vw;
-    transform-origin: top left;
+    width: 100%; /* Changed from 100vw */
+    max-width: 100%; /* Ensure it doesn't exceed viewport */
+    height: auto;
+    min-height: 100vh; /* Ensure it has height */
+    margin: 0 auto; /* Center it */
 }
 
 /* Map image */
@@ -22,6 +25,7 @@ html, body {
     width: 100%;
     height: auto;
     display: block;
+   max-width: 100%;
 }
 
 /* Hotspots */
@@ -2499,4 +2503,5 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
