@@ -54,9 +54,19 @@ function updateProfileUI() {
 const MAPS = {
   map1: { image: "map.jpg" },
   map2: { image: "map2.jpg" },
-  map3: { image: "map3.jpg" }
+  map3: { image: "map3.jpg" }};
 
-    // Initially hide all hotspots
+ // ==========================
+// MAP LOADING & POSITIONING
+// ==========================
+function initializeMap() {
+  const mapImage = document.getElementById('map-image');
+  const hotspots = document.querySelectorAll('.hotspot');
+  const container = document.getElementById('map-container');
+  
+  if (!mapImage || !container) return;
+  
+  // Initially hide all hotspots
   hotspots.forEach(hotspot => {
     hotspot.style.opacity = '0';
     hotspot.style.pointerEvents = 'none';
@@ -104,7 +114,6 @@ window.addEventListener('load', () => {
   // Small delay to ensure everything is rendered
   setTimeout(initializeMap, 100);
 });
-};
 
 function getMapForQuest(questId) {
   const hotspot = document.querySelector(`.hotspot[data-city="${questId}"]`);
@@ -3461,3 +3470,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // ... rest of your code ...
 
 });
+
