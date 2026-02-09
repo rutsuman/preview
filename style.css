@@ -12,7 +12,7 @@ html, body {
 
 /* Map container */
 #map-container {
-    position: relative;
+    position: absolute !important;
     width: 100%; /* Changed from 100vw */
     max-width: 100%; /* Ensure it doesn't exceed viewport */
     height: auto;
@@ -2503,5 +2503,6 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
 
