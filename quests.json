@@ -3214,7 +3214,6 @@
 
 
     "3D's_Path_": "---------------------------------",
-
     "quest53": {
       "path": ["3D Path"],
       "difficulty": 3,
@@ -3283,9 +3282,8 @@
     "allottedMinutes": 600},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest54": {
+  },
+  "quest54": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Necklace of the Desert Moon",
@@ -3343,9 +3341,8 @@
     "allottedMinutes": 600},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest56": {
+  },
+  "quest56": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Story Tile of the Hearth",
@@ -3403,9 +3400,8 @@
     "allottedMinutes": 675},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest57": {
+  },
+  "quest57": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Bound Spirit",
@@ -3473,9 +3469,8 @@
     "allottedMinutes": 750},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest58": {
+  },
+  "quest58": {
       "path": ["3D Path"],
       "difficulty": 3,
       "title": "The Citadel of Forms",
@@ -3542,9 +3537,8 @@
     "allottedMinutes": 600},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest59": {
+  },
+  "quest59": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Scales of Balance",
@@ -3593,7 +3587,7 @@
       },
       "links": [""],
       "reward": "you got money!!!!",
-      "character": "",
+      "character": "charimage/char59.gif",
       "style": "",
       "prerequisites": [],
       "completed": false,
@@ -3601,9 +3595,8 @@
     "allottedMinutes": 225},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest60": {
+  },
+  "quest60": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Duel of Light and Shadow",
@@ -3652,7 +3645,7 @@
       },
       "links": [""],
       "reward": "you got money!!!!",
-      "character": "",
+      "character": "charimage/char60.gif",
       "style": "",
       "prerequisites": [],
       "completed": false,
@@ -3660,9 +3653,8 @@
     "allottedMinutes": 225},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest61": {
+  },
+  "quest61": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Heart of the Statue",
@@ -3719,9 +3711,8 @@
     "allottedMinutes": 225},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest62": {
+  },
+  "quest62": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Dance of the Wind",
@@ -3778,9 +3769,8 @@
     "allottedMinutes": 225},
   "accepted": false,
   "acceptedAt": null
-    },
-
-    "quest63": {
+  },
+  "quest63": {
       "path": ["3D Path"],
       "difficulty": 2,
       "title": "The Echoing Repetition",
@@ -3829,7 +3819,7 @@
       },
       "links": [""],
       "reward": "you got money!!!!",
-      "character": "",
+      "character": "charimage/char63.gif",
       "style": "",
       "prerequisites": [],
       "completed": false,
@@ -3837,8 +3827,8 @@
     "allottedMinutes": 225},
   "accepted": false,
   "acceptedAt": null
-    },
-      "quest68": {
+  },
+  "quest68": {
     "path": ["3D Path"],
     "difficulty": 4,
     "title": "The Master Forgemaster’s Covenant",
@@ -3907,6 +3897,178 @@
     "allottedMinutes": 750},
   "accepted": false,
   "acceptedAt": null
-    }
+  },
+  "quest70": {
+    "path": ["3D Path", "Mixed Media Path"],
+    "difficulty": 3,
+    "title": "The Animist's Awakening",
+    "rationale": "<h2>The Animist's Awakening</h2><p><strong>Why it's important:</strong><br>This summative quest bridges functional design with artistic expression. Redesigning an everyday object teaches students to analyze form, function, and aesthetics while developing creative problem-solving skills. The challenge requires both technical 3D construction and conceptual thinking about how objects 'live' in our world.</p><p><strong>Skills developed:</strong></p><ul><li>Analytical observation of existing objects</li><li>Conceptual redesign and creative transformation</li><li>3D construction with mixed media</li><li>Functional and aesthetic balance</li><li>Process documentation from research to final product</li></ul><p>This quest prepares students for design thinking and encourages them to see the artistic potential in everyday items.</p>",
+    "description": "In the Workshop of Awakened Forms, the old tinkerer Móðir sits surrounded by mundane objects she calls 'sleeping spirits.' She believes every manufactured thing holds a latent personality, waiting to be revealed through redesign.\n\nShe hands you an ordinary, mass-produced object—a chair, lamp, table, or similar. 'This one,' she whispers, 'dreams of being more than it is. It yearns for a second life, a truer form.'\n\nYour task is to listen to the object's hidden character and redesign it into something that expresses its soul. You must respect its original function while transforming its appearance, materiality, and presence entirely. The final piece should feel like the object has awakened, revealing what it was always meant to be.",
+    "requirements": [
+      "Select one ordinary, mass-produced object as your starting point",
+      "Research and analyze its current form, function, and manufacturing",
+      "Create a completely redesigned version that maintains its core function",
+      "Use mixed media (clay, wire, found objects, EVA foam, etc.) for construction",
+      "Include a written statement explaining your redesign concept",
+      "Document your entire process: research → sketches → prototypes → final piece"
+    ],
+    "rubric": {
+      "overall": "The Animist's Awakening (MVP)",
+      "standards": [
+        {
+          "code": "Art.FA.CN.10.1.IA",
+          "name": "Research & Conceptual Development",
+          "levels": {
+            "4": "Deep research into original object's design; sophisticated concept connecting form, function, and transformation.",
+            "3": "Clear research and concept development; logical connection between original and redesign.",
+            "2": "Basic research; concept is simplistic or unclear in its transformation logic.",
+            "1": "Minimal research; no clear conceptual foundation for the redesign."
+          }
+        },
+        {
+          "code": "Art.FA.CR.1.2.IA",
+          "name": "Technical Execution & Craftsmanship",
+          "levels": {
+            "4": "Exceptional craftsmanship; materials used intentionally and skillfully; construction is solid and refined.",
+            "3": "Good craftsmanship; materials used effectively; construction is mostly solid.",
+            "2": "Adequate craftsmanship; some technical issues with materials or construction.",
+            "1": "Poor craftsmanship; construction is unstable or materials misused."
+          }
+        },
+        {
+          "code": "Art.FA.CR.2.1.IA",
+          "name": "Design & Functional Integrity",
+          "levels": {
+            "4": "Redesign successfully balances radical aesthetics with maintained/improved function; form follows concept.",
+            "3": "Good balance between new form and original function; design is coherent.",
+            "2": "Uneven balance; either form or function suffers in the transformation.",
+            "1": "Poor design; function is lost or form is incoherent."
+          }
+        },
+        {
+          "code": "Art.FA.RE.8.1.8A",
+          "name": "Critical Analysis & Reflection",
+          "levels": {
+            "4": "Sophisticated analysis of original object's design flaws/opportunities; insightful reflection on transformation choices.",
+            "3": "Clear analysis and reflection; understands strengths/weaknesses of redesign.",
+            "2": "Basic analysis; reflection lacks depth or specificity.",
+            "1": "Minimal analysis or reflection; cannot articulate design decisions."
+          }
+        }
+      ]
+    },
+    "links": [
+      {
+        "type": "Design Process Example",
+        "url": "https://www.youtube.com/watch?v=nZXc6AeDYDw&t=7s"
+      },
+      {
+        "type": "Object Transformation Inspiration",
+        "url": "https://www.youtube.com/watch?v=EJAGRJj7bpI"
+      },
+      {
+        "type": "Lamp design samples",
+        "url": "https://adorno.design/editorial/explore-the-top-10-contemporary-conceptual-lighting-designs/?srsltid=AfmBOopxv3b4tNFl6JH37yqa3aQrBa0c_xTpOkVPM2Wy7f___2tNHz6o"
+      },     
+      {
+        "type": "Table design samples",
+        "url": "https://adorno.design/editorial/15-conceptual-tables-unveiling-the-essense-of-design/?srsltid=AfmBOorkW-5idBXNu4HKk7SR3CfgIk7jeqjBis6ODuzAnNy_b9Wc1Xed"},
+      {
+        "type": "char redesign samples",
+        "url": "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*2bYl47VIhWJR94nG"
+      }
+    ],
+    "reward": "",
+    "character": "charimage/char70.gif",
+    "style": "mvp",
+    "prerequisites": ["quest34", "quest48", "quest59", "quest60"],
+   "completed": false,
+      "timer": {
+    "allottedMinutes": 750},
+  "accepted": false,
+  "acceptedAt": null
+  },
+  "quest71": {
+    "path": ["3D Path", "Mixed Media Path"],
+    "difficulty": 3,
+    "title": "The Dreamweaver's Gambit",
+    "rationale": "<h2>The Dreamweaver's Gambit</h2><p><strong>Why it's important:</strong><br>This quest combines art history, technical craft, and conceptual translation. Needle felting requires patience, precision, and spatial thinking while reproducing a 2D painting in 3D wool teaches students to analyze color, composition, and texture in new dimensions. The challenge of translating brushstrokes into wool fibers develops both observational skills and material mastery.</p><p><strong>Skills developed:</strong></p><ul><li>Art historical analysis and interpretation</li><li>Needle felting technique and wool manipulation</li><li>Color theory application with fiber materials</li><li>Spatial translation from 2D to 3D form</li><li>Patience and precision in craft execution</li></ul><p>This quest demonstrates how traditional crafts can reinterpret fine art, bridging historical and contemporary making practices.</p>",
+    "description": "The village of Stillaheim is haunted by Mara, the Nightmare Weaver—a creature who traps minds in restless sleep by unraveling their memories into tangled wool. Her power grows from stolen dreams, which she hangs as spectral tapestries in her lair.\n\nOnly one art can counter her: the ancient craft of felting, which binds loose fibers into solid truth. The elders have discovered Mara's weakness—she cannot bear to see dreams made permanent, rendered with such conviction that they cannot be undone.\n\nYou are tasked with selecting a famous painting whose emotional power matches Mara's dark artistry. Through needle felting, you must recreate this masterpiece in wool, stitch by meticulous stitch. Your felted reproduction must capture not just the image, but the painting's soul—its color harmonies, its emotional weight, its very essence made tangible. Only a work of such crafted truth can unravel Mara's nightmares and restore peaceful sleep.",
+    "requirements": [
+      "Select one famous painting from any art movement or period",
+      "Research the painting's composition, color palette, and emotional impact",
+      "Create a needle-felted reproduction using wool fibers",
+      "Include a color study showing your wool color selections matching the original",
+      "Present both the original painting reference and your 3D felted version",
+      "Write a brief analysis explaining your translation choices from paint to wool"
+    ],
+    "rubric": {
+      "overall": "The Dreamweaver's Gambit (MVP)",
+      "standards": [
+        {
+          "code": "Art.FA.CN.10.1.IA",
+          "name": "Research & Art Historical Analysis",
+          "levels": {
+            "4": "Deep research into painting's context; sophisticated understanding of style, technique, and emotional intent translated into felted form.",
+            "3": "Clear research; good understanding of painting's elements effectively translated to wool medium.",
+            "2": "Basic research; some elements misunderstood or poorly translated between mediums.",
+            "1": "Minimal research; poor understanding of original artwork's qualities."
+          }
+        },
+        {
+          "code": "Art.FA.CR.1.2.IA",
+          "name": "Felting Technique & Craftsmanship",
+          "levels": {
+            "4": "Exceptional felting control; wool density, color blending, and texture masterfully recreate painting's effects.",
+            "3": "Good technical control; clear effort to match painting's qualities with wool techniques.",
+            "2": "Adequate technique; inconsistencies in wool application or texture.",
+            "1": "Poor technical control; felted work lacks refinement or cohesion."
+          }
+        },
+        {
+          "code": "Art.FA.RE.8.1.8A",
+          "name": "Visual Translation & Interpretation",
+          "levels": {
+            "4": "Brilliant translation from 2D to 3D; captures painting's essence while exploring wool's unique textural possibilities.",
+            "3": "Clear translation; reproduces key elements accurately in felted form.",
+            "2": "Partial translation; some elements lost or misinterpreted in medium change.",
+            "1": "Poor translation; little connection between original and felted version."
+          }
+        },
+        {
+          "code": "Art.FA.CR.2.1.IA",
+          "name": "Composition & Color Harmony",
+          "levels": {
+            "4": "Masterful composition replication; color matching and wool blending create harmonious, balanced felted artwork.",
+            "3": "Good composition and color harmony; mostly accurate to original painting.",
+            "2": "Uneven composition; color choices deviate significantly from original.",
+            "1": "Poor composition; color harmony lacking or incorrect."
+          }
+        }
+      ]
+    },
+    "links": [
+      {
+        "type": "100 Famous paintings",
+        "url": "https://www.topofart.com/top-100-art-reproductions.php?srsltid=AfmBOoq3Mu9d5B0_t9VE6o76Uwu0Ets6grUDTPcYjp47AOSjLRea91r9"
+      },
+      {
+        "type": "Needle felting sample",
+        "url": "https://www.youtube.com/watch?v=RL_WeMkEjPU&list=PLjpPlDIx2xhDCkekNBT6ELa0LUDxveSSh&index=4"
+      },
+      {
+        "type": "Needle felting sample",
+        "url": "https://www.youtube.com/watch?v=iSXy9uYz-sE&list=PLjpPlDIx2xhDCkekNBT6ELa0LUDxveSSh"
+      }
+    ],
+    "reward": "",
+    "character": "charimage/char71.gif",
+    "style": "mvp",
+    "prerequisites": ["quest34", "quest55", "quest67"],
+    "completed": false,
+    "timer": {
+      "allottedMinutes": 750},
+    "accepted": false,
+    "acceptedAt": null
   }
-
+}
