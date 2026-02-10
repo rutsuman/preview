@@ -3196,6 +3196,94 @@
   "accepted": false,
   "acceptedAt": null
     },
+     "quest72": {
+    "path": ["Sketcher Path", "Mixed Media Path"],
+    "difficulty": 4,
+    "title": "The Scroll of Unwritten Fates",
+    "rationale": "<h2>The Scroll of Unwritten Fates</h2><p><strong>Why it's important:</strong><br>This summative quest combines narrative storytelling, character design, and sequential art—the core pillars of manga creation. Creating a complete comic requires students to integrate multiple artistic skills while managing pacing, composition, and visual flow across pages. The 10-page constraint teaches economy of storytelling, forcing focused narrative development and intentional panel design.</p><p><strong>Skills developed:</strong></p><ul><li>Sequential storytelling and narrative pacing</li><li>Character design and visual consistency</li><li>Panel composition and page layout</li><li>Inking and toning techniques</li><li>Visual communication of emotion and action</li></ul><p>This quest demonstrates mastery of comic art fundamentals while encouraging creative writing and visual problem-solving.</p>",
+    "description": "In the Silent Library of Kyō, there exists an ancient scroll that remains perpetually blank—the Scroll of Unwritten Fates. Its keeper, the archivist Kumo, explains its curse: it absorbs stories but erases them instantly unless rendered with perfect visual conviction.\n\nA shadow creature called Kurayami now feeds on these lost narratives, growing stronger with each forgotten tale. To defeat it, you must create a manga that the scroll cannot consume—a story so visually compelling, so perfectly paced, and so emotionally resonant that it becomes permanent.\n\nYour challenge: Create a 10-page manga comic with a complete narrative arc. Each page must serve the story; each panel must advance character or plot. Through careful composition, expressive characters, and controlled pacing, you will forge a story that withstands the scroll's hunger and banishes Kurayami back to the void between panels.",
+    "requirements": [
+      "Create a complete manga comic (no more than 10 pages)",
+      "Include at least 10 panels total across all pages",
+      "Feature original characters and story (no fan fiction)",
+      "Use proper manga formatting: right-to-left reading, panel gutters, speech bubbles",
+      "Include cover page with title and author credit",
+      "Submit script/plot outline showing narrative structure"
+    ],
+    "rubric": {
+      "overall": "The Scroll of Unwritten Fates (MVP)",
+      "standards": [
+        {
+          "code": "Art.FA.CN.10.1.IA",
+          "name": "Narrative Development & Planning",
+          "levels": {
+            "4": "Sophisticated story structure with clear beginning-middle-end; detailed script shows intentional pacing and character development.",
+            "3": "Clear narrative with logical progression; script outlines main story beats effectively.",
+            "2": "Basic story structure; plot has gaps or unclear progression.",
+            "1": "Weak narrative; story is confusing or incomplete."
+          }
+        },
+        {
+          "code": "Art.FA.CR.1.2.IA",
+          "name": "Manga Technique & Execution",
+          "levels": {
+            "4": "Masterful line quality, toning, and inking; professional-level manga techniques throughout.",
+            "3": "Good technical execution; clear use of manga conventions with minor inconsistencies.",
+            "2": "Adequate technique; some technical issues with linework, toning, or formatting.",
+            "1": "Poor technical execution; lacks proper manga conventions."
+          }
+        },
+        {
+          "code": "Art.FA.CR.2.1.IA",
+          "name": "Visual Storytelling & Composition",
+          "levels": {
+            "4": "Exceptional page layouts and panel sequencing; composition enhances narrative flow and emotional impact.",
+            "3": "Good composition and layout; clear visual storytelling with logical panel progression.",
+            "2": "Uneven composition; panel sequencing sometimes confuses narrative flow.",
+            "1": "Poor composition; layouts disrupt storytelling."
+          }
+        },
+        {
+          "code": "Art.FA.RE.8.1.8A",
+          "name": "Character Expression & Visual Communication",
+          "levels": {
+            "4": "Characters are highly expressive and consistent; visual storytelling clearly conveys emotions, actions, and relationships.",
+            "3": "Clear character expression and visual communication; mostly effective in conveying story elements.",
+            "2": "Partial success in expression; some emotions or actions unclear.",
+            "1": "Poor visual communication; characters lack expression or consistency."
+          }
+        }
+      ]
+    },
+    "links": [
+      {
+      "type": "Manga Script Formatting",
+      "url": "https://www.youtube.com/watch?v=LFEXTQadpSs"
+      },
+      {
+      "type": "Panel Composition Guide",
+      "url": "https://www.youtube.com/watch?v=2Syc0CjcRZU"
+      },
+      {
+      "type": "Manga Storyboarding",
+      "url": "https://www.youtube.com/watch?v=bh_zB1zf4Hs&t=1s"
+      },
+      {
+      "type": "Manga Script Formatting",
+      "url": "https://www.mangaschool.co/post/how-to-write-a-manga-script"
+      }
+    ],
+    "reward": "",
+    "character": "charimage/char72.gif",
+    "style": "mvp",
+    "prerequisites": ["quest30", "quest39", "quest47"],
+    "completed": false,
+    "timer": {
+      "allottedMinutes": 750
+    },
+    "accepted": false,
+    "acceptedAt": null
+  },
 
 
 
