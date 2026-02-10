@@ -2599,7 +2599,7 @@ const tourSteps = [
   {
     image: "welcome/edu1.png",
     text: "Hail, traveler, and welcome to the kingdom of Artheim. I am here to serve as your guide. ",
-    imagePosition: { x: 50, y: 103 }, // Center of screen
+    mapPosition: { left: 50, top: 103 }, // Center of screen
     talkBubblePosition: { x: 30, y: 50 }, // Bottom center
     talkBubbleClass: "talk-bubble-bottom-center",
     highlightSelector: "#map-container"
@@ -2607,41 +2607,41 @@ const tourSteps = [
   {
     image: "welcome/edu2.png",
     text: "My name is Eduardo! My purpose is to guide your steps on the journey to come.",
-    imagePosition: { x: 50, y: 110 }, // right side
-    talkBubblePosition: { x: 10, y: 40 }, // Bottom center
+    mapPosition: { left: 50, top: 110 }, // right side
+    talkBubblePosition: { left: 10, top: 40 }, // Bottom center
     talkBubbleClass: "talk-bubble-bottom-center",
     highlightSelector: "#map-container"
   },
     {
     image: "welcome/edu3.png",
     text: "You've arrived in Artheim, where every splash of color is a doorway and every sketch tells a tale! Your gallery of quests is open—which masterpiece will you complete first?",
-    imagePosition: { x: 95, y: 120 }, // right side
-    talkBubblePosition: { x: 60, y: 20 }, // Bottom center
+   mapPosition: { left: 95, top: 120 }, // right side
+    talkBubblePosition: { left: 60, top: 20 }, // Bottom center
     talkBubbleClass: "talk-bubble-bottom-center",
     highlightSelector: "#map-container"
   },
   {
     image: "welcome/edu4.png",
     text: "Click on a city on the map or any of the monsters to see detailed information",
-    imagePosition: { x: 50, y: 420 }, // Top right
-    talkBubblePosition: { x: 65, y: 20 }, // Top left
+    mapPosition: { left: 50, top: 420 }, // Top right
+    talkBubblePosition: { left: 65, top: 20 }, // Top left
     talkBubbleClass: "talk-bubble-bottom-center",
   },
   { 
     image: "welcome/edu16.png",
     glowEffect: "blue",
-    imagePosition: { x: 2, y: 330 },
+    mapPosition: { left: 2, top: 330 },
     text: "The blue quests are our 'Studies in Practice.' Think of them as quick, rewarding formatives—a perfect way to learn the rules of our world before you master the skills.",
-    imagePosition: { x: 2, y: 330 }, // Top right
-    talkBubblePosition: { x: 0, y: 5 }, // Top left
+   mapPosition: { left x: 2, top: 330 }, // Top right
+    talkBubblePosition: { left: 0, top: 5 }, // Top left
     talkBubbleClass: "talk-bubble-bottom-center",
     openQuest: "quest1"
   },
   { 
     image: "welcome/edu15.png",
     text: "Then, there are the Golden Quests. These are your summative objectives, the MVPs of this realm. The difficulty is high, but the rewards define a legacy.",
-    imagePosition: { x: 2, y: 400 }, // Top right
-    talkBubblePosition: { x: 0, y: 25 }, // Top left
+   mapPosition: { left: 2, top: 400 }, // Top right
+    talkBubblePosition: { left: 0, top: 25 }, // Top left
     talkBubbleClass: "talk-bubble-bottom-center",
     openQuest: "quest4"
   },
@@ -2649,8 +2649,8 @@ const tourSteps = [
     {
     image: "welcome/edu5.png",
     text: "<b>`The Path`</b> is the discipline you will master (Painting, Watercolor, Sketch, 3D).<br><b>`The Title`</b> is the name of the specific challenge that awaits you.",
-    imagePosition: { x: 110, y: 20 }, // Top left
-    talkBubblePosition: { x: 80, y: 60 }, // Top right
+   mapPosition: { left: 110, top: 20 }, // Top left
+    talkBubblePosition: { left: 80, top: 60 }, // Top right
     talkBubbleClass: "talk-bubble-left",
     openQuest: "quest1",
     highlightSelector: ["#quest-paths", "#quest-title"]
@@ -2658,8 +2658,8 @@ const tourSteps = [
   {
     image: "welcome/edu5.png",
     text: "The <b>'Rationale'</b> explains why this quest is important for your artistic journey.<br>While the <b>Dificulty</b> shows how hard the quest is.",
-    imagePosition: { x: 110, y: 20 }, // Top left
-    talkBubblePosition: { x: 80, y: 60 }, // Top right
+    mapPosition: { left: 110, top: 20 }, // Top left
+    talkBubblePosition: { left: 80, top: 60 }, // Top right
     talkBubbleClass: "talk-bubble-left",
     openQuest: "quest1",
     highlightSelector:"#quest-rationale"
@@ -2667,8 +2667,8 @@ const tourSteps = [
   {
     image: "welcome/edu6.png",
     text: "The <b>'Timer'</b> shows how long you have to finish a quest.<br> When it's close to run out, you will receive a warning!",
-    imagePosition: { x: 0, y: 100 }, // Top left
-    talkBubblePosition: { x: 30, y: 30 }, // Top right
+    mapPosition: { left: 0, top: 100 }, // Top left
+    talkBubblePosition: { left: 30, top: 30 }, // Top right
     talkBubbleClass: "talk-bubble-left",
     openQuest: "quest1",
     highlightSelector:"#quest-accept"
@@ -2676,8 +2676,8 @@ const tourSteps = [
   {
     image: "welcome/edu8.png",
     text: "In the middle you can see all details of you quest.<br><b> Pay Attention!</b>",
-    imagePosition: { x: 100, y: 200 }, // Top left
-    talkBubblePosition: { x: 65, y: 49 }, // Top right
+    mapPosition: { left: 100, top: 200 }, // Top left
+    talkBubblePosition: { left: 65, top: 49 }, // Top right
     talkBubbleClass: "talk-bubble-left",
     openQuest: "quest1",
     highlightSelector:["#quest-character","#quest-text","#quest-requirements"]
@@ -2685,8 +2685,8 @@ const tourSteps = [
   {
     image: "welcome/edu7.png",
     text: "The <b>'Rubric'</b> shows how your work will be assessed. <br>Complete quests to unlock your grading!",
-    imagePosition: { x: 45, y: 170 }, // Bottom right
-    talkBubblePosition: { x: 75, y: 35 }, // Bottom left
+    mapPosition: { left: 45, top: 170 }, // Bottom right
+    talkBubblePosition: { left: 75, top: 35 }, // Bottom left
     talkBubbleClass: "talk-bubble-top-right",
     openQuest: "quest1",
     highlightSelector: "#quest-rubric"
@@ -2694,8 +2694,8 @@ const tourSteps = [
     {
     image: "welcome/edu9.png",
     text: "The <b>'Sample'</b> is a MUST see. It will help me to guide you.</br> The <b>'Pre requisites/Leads to'</b> show quests related to the one you are doing.",
-    imagePosition: { x: 100, y: 170 }, // Bottom right
-    talkBubblePosition: { x: 70, y: 25 }, // Bottom left
+    mapPosition: { left: 100, top: 170 }, // Bottom right
+    talkBubblePosition: { left: 70, top: 25 }, // Bottom left
     talkBubbleClass: "talk-bubble-top-right",
     openQuest: "quest1",
     highlightSelector: ["#quest-links","#quest-prereq-leads-prereq"]  
@@ -2703,8 +2703,8 @@ const tourSteps = [
   {
     image: "welcome/edu10.png",
     text: "and finally we have the <b>'Reward'</b>. Better grades mean better rewards!!",
-    imagePosition: { x: 100, y: 180 }, // Bottom right
-    talkBubblePosition: { x: 67, y: 35 }, // Bottom left
+    mapPosition: { left: 100, top: 180 }, // Bottom right
+    talkBubblePosition: { left: 67, top: 35 }, // Bottom left
     talkBubbleClass: "talk-bubble-top-right",
     openQuest: "quest1",
     highlightSelector: "#quest-reward"
@@ -2712,8 +2712,8 @@ const tourSteps = [
   {
     image: "welcome/edu14.png",
     text: "The <b>'Search'</b> helps you to descover your new adventure. You can search by, title, skill, or any keyword.<br><br> You can also see other maps there.",
-    imagePosition: { x: 65, y: 60 }, // Middle right
-    talkBubblePosition: { x: 35, y: 40 }, // Middle left
+    mapPosition: { left: 65, top: 60 }, // Middle right
+    talkBubblePosition: { left: 35, top: 40 }, // Middle left
     talkBubbleClass: "talk-bubble-right",
     highlightSelector: "#dropdown-container"
   },
@@ -2721,30 +2721,30 @@ const tourSteps = [
   {
     image: "welcome/edu11.png",
     text: "You can track your progress on you <b>'Profile'</b> button.<br>It tracks your grades and total rewards. You can save your progress there too!",
-    imagePosition: { x: 60, y: 80 }, // Bottom left
-    talkBubblePosition: { x: 80, y: 20 }, // Top right
+    mapPosition: { left: 60, top: 80 }, // Bottom left
+    talkBubblePosition: { left: 80, top: 20 }, // Top right
     talkBubbleClass: "talk-bubble-bottom-left",
   },
     {
     image: "welcome/edu12.png",
     text: "You can also change your avatar there.",
-    imagePosition: { x: 60, y: 80 }, // Bottom left
-    talkBubblePosition: { x: 80, y: 20 }, // Top right
+    mapPosition: { left: 60, top: 80 }, // Bottom left
+    talkBubblePosition: { left: 80, top: 20 }, // Top right
     talkBubbleClass: "talk-bubble-bottom-left",
   },
     {
     image: "welcome/edu13.png",
     text: "The <b>'🏆Achievements'</b> shows all quests you completed.<br><br> You can also complete themed groups of quests to get better rewards! <br>Show off your mastery!",
-    imagePosition: { x: 90, y: 90 }, // Middle left
-    talkBubblePosition: { x: 50, y: 40 }, // Middle right
+   mapPosition: { left: 90, top: 90 }, // Middle left
+    talkBubblePosition: { left: 50, top: 40 }, // Middle right
     talkBubbleClass: "talk-bubble-left",
   },
 
   {
     image: "welcome/edu17.png",
     text: "Now <b>YOU</b> decide your path!<br><br> Chose your own quests,<br> work hard and show me that you control your destiny!<br><br> Ready to begin your adventure?",
-    imagePosition: { x: 50, y: 400 }, // Center
-    talkBubblePosition: { x: 50, y: 0 }, // Top center
+   mapPosition: { left: 50, top: 400 }, // Center
+    talkBubblePosition: { left: 50, top: 0 }, // Top center
     talkBubbleClass: "talk-bubble-bottom-center",
   }
 ];
@@ -2762,6 +2762,53 @@ function showWelcomeTour() {
     }
   }, 1000);
 }
+
+function positionElementRelativeToMap(element, position, isTourImage = true) {
+  const mapContainer = document.getElementById("map-container");
+  const mapImage = document.getElementById("map-image");
+  
+  if (!mapContainer || !mapImage || !element) return;
+  
+  // Get map dimensions
+  const mapRect = mapImage.getBoundingClientRect();
+  const containerRect = mapContainer.getBoundingClientRect();
+  
+  if (mapRect.width === 0 || mapRect.height === 0) {
+    // Map not loaded yet, try again later
+    setTimeout(() => positionElementRelativeToMap(element, position, isTourImage), 100);
+    return;
+  }
+  
+  // Calculate position relative to map
+  const leftPercent = position.left; // Already a percentage
+  const topPercent = position.top;   // Already a percentage
+  
+  // Apply the transform scale from the map
+  const mapScale = scale || 1;
+  
+  if (isTourImage) {
+    // For tour images: position relative to map, scale with map
+    const mapCenterX = mapRect.left + mapRect.width * (leftPercent / 100);
+    const mapCenterY = mapRect.top + mapRect.height * (topPercent / 100);
+    
+    // Convert to container-relative coordinates
+    const containerLeft = mapCenterX - containerRect.left;
+    const containerTop = mapCenterY - containerRect.top;
+    
+    element.style.left = `${containerLeft}px`;
+    element.style.top = `${containerTop}px`;
+    element.style.transform = `translate(-50%, -50%) scale(${mapScale})`;
+  } else {
+    // For talk bubbles: position relative to container
+    element.style.left = `${leftPercent}%`;
+    element.style.top = `${topPercent}%`;
+    element.style.transform = `translate(-50%, -50%)`;
+  }
+  
+  // Make sure element is visible
+  element.style.display = "block";
+}
+
 
 function updateTourStep(stepIndex) {
   const step = tourSteps[stepIndex];
@@ -2789,30 +2836,31 @@ function updateTourStep(stepIndex) {
     // Close quest overlay if this step doesn't need it
     closeQuest();
   }
+
   
-  // Update image
-  
-  // Update image
-  const imageElement = document.getElementById("welcome-tour-image");
+ // Update and position the image relative to map
   const imageWrapper = document.getElementById("welcome-tour-image-wrapper");
+  const imageElement = document.getElementById("welcome-tour-image");
   
-  if (imageElement && imageWrapper) {
+  if (imageElement && imageWrapper && step.mapPosition) {
     // Set image source
     imageElement.src = step.image;
     imageElement.alt = `Tour step ${stepIndex + 1}`;
     
-    // Position image
-    const x = step.imagePosition.x;
-    const y = step.imagePosition.y;
+    // Position relative to map with proper scaling
+    positionElementRelativeToMap(imageWrapper, step.mapPosition, true);
     
-    imageWrapper.style.left = `${x}%`;
-    imageWrapper.style.top = `${y}%`;
-    imageWrapper.style.transform = `translate(-${x}%, -${y}%)`;
+    // Add glow effect if specified
+    if (step.glowEffect) {
+      imageWrapper.style.filter = `drop-shadow(0 0 10px ${step.glowEffect})`;
+    } else {
+      imageWrapper.style.filter = "none";
+    }
   }
   
   // Update talk bubble
   const talkBubble = document.getElementById("welcome-tour-talk-bubble");
-  if (talkBubble) {
+  if (talkBubble && step.talkBubblePosition) {
     // Remove all positioning classes
     talkBubble.className = "";
     talkBubble.id = "welcome-tour-talk-bubble";
@@ -2822,10 +2870,10 @@ function updateTourStep(stepIndex) {
       talkBubble.classList.add(step.talkBubbleClass);
     }
     
-    // Position talk bubble
-    talkBubble.style.left = `${step.talkBubblePosition.x}%`;
-    talkBubble.style.top = `${step.talkBubblePosition.y}%`;
-    talkBubble.style.transform = `translate(-${step.talkBubblePosition.x}%, -${step.talkBubblePosition.y}%)`;
+    // Position talk bubble relative to container
+    talkBubble.style.left = `${step.talkBubblePosition.left}%`;
+    talkBubble.style.top = `${step.talkBubblePosition.top}%`;
+    talkBubble.style.transform = `translate(-50%, -50%)`;
     
     // Update text and counter
     document.getElementById("welcome-tour-text").innerHTML  = step.text;
@@ -2846,6 +2894,28 @@ function updateTourStep(stepIndex) {
   // Highlight relevant element if selector exists
   if (step.highlightSelector) {
     highlightElement(step.highlightSelector);
+  }
+}
+
+function updateTourPositions() {
+  if (currentTourStep === -1) return; // No active tour
+  
+  const step = tourSteps[currentTourStep];
+  if (!step) return;
+  
+  const imageWrapper = document.getElementById("welcome-tour-image-wrapper");
+  const talkBubble = document.getElementById("welcome-tour-talk-bubble");
+  
+  // Update image position
+  if (imageWrapper && step.mapPosition) {
+    positionElementRelativeToMap(imageWrapper, step.mapPosition, true);
+  }
+  
+  // Update talk bubble position
+  if (talkBubble && step.talkBubblePosition) {
+    talkBubble.style.left = `${step.talkBubblePosition.left}%`;
+    talkBubble.style.top = `${step.talkBubblePosition.top}%`;
+    talkBubble.style.transform = `translate(-50%, -50%)`;
   }
 }
 
@@ -3497,5 +3567,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // ... rest of your code ...
 });
+
 
 
