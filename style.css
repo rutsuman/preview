@@ -39,12 +39,12 @@ html, body {
     aspect-ratio: 12 / 1 !important; /* Width:Height = 12:1 ratio (4% width ÷ 0.33% height) */
 }
 
-/* Debug: show hotspots */
+/* Debug: show hotspots
 .hotspot.debug {
     background: rgba(224, 50, 50, 0.461);
 }
 
-/* Grid overlay*/
+/* Grid overlay
 #map-container::after {
     content: "";
     position: absolute;
@@ -2503,6 +2503,7 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
 
 
