@@ -42,7 +42,7 @@
               {"type":"Video sample","url":"https://m.youtube.com/watch?v=1TL5ebCDjN4"},
                             {"type":"Video sample","url":"https://m.youtube.com/watch?v=Yag1mjm4RtA&pp=0gcJCXwKAYcqIYzv"}],
     "reward": "",
-    "character": "charimage/char1.png",
+    "character": "charimage/char1.gif",
     "style": "",
     "prerequisites":[],
     "completed": false,
@@ -100,7 +100,7 @@
     "links": [{"type": "10 Modern Art Movements", "url": "https://www.britannica.com/list/10-modernist-art-movements" },
               {"type":"174 Art Movements","url":"https://www.theartstory.org/movements/"}],
     "reward": "",
-    "character": "charimage/char2.png",
+    "character": "charimage/char2.gif",
     "style": "",
     "prerequisites":["quest1"],
     "completed": false,"timer": {
@@ -159,7 +159,7 @@
     "links": [{"type": "10 Modern Art Movements", "url": "https://www.britannica.com/list/10-modernist-art-movements" },
               {"type":"174 Art Movements","url":"https://www.theartstory.org/movements/"}],
     "reward": "",
-    "character": "charimage/char3.png",
+    "character": "charimage/char3.gif",
     "prerequisites":["quest1"],
     "style": "",
     "completed": false,
@@ -328,7 +328,7 @@
       "links": [{"type": "Video sample", "url": "https://www.youtube.com/watch?v=tIyqMTKFmC0" },
       {"type":"Video sample","url":"https://www.youtube.com/watch?v=ZONVHAftzFg"}],
     "reward": " you got money!!!!",
-    "character": "charimage/char6.png",
+    "character": "charimage/char6.gif",
     "style": "",
     "prerequisites": ["quest1"],
     "completed": false,
@@ -340,9 +340,9 @@
   "quest7": {
     "path": ["Painter Path"],
     "difficulty": 1,
-    "title": "The Woody Grain’s Challenge",
-    "rationale": "<h2>The Woody Grain’s Challenge</h2><p><strong>Why it’s important:</strong><br>Texture makes surfaces believable. Wood requires controlled irregularity, which trains your eye to observe subtle patterns and replicate them accurately.</p><p><strong>Skills developed:</strong></p><ul><li>Textural linework and pattern</li><li>Controlled shading for depth</li><li>Surface variation and realism</li><li>Attention to detail</li></ul><p>It strengthens your ability to depict natural materials and environments.</p>",
-    "description": "Wood is struggling with his patterns and needs help. To succeed, you must observe the subtle lines, knots, and grains that make each piece of wood unique, and translate them onto your page with precision and care. This trial will sharpen your skills in texture, line work, and shading as you bring wood to life with your pencil or pen.",
+    "title": "The Willow Grain’s Challenge",
+    "rationale": "<h2>The Willow Grain’s Challenge</h2><p><strong>Why it’s important:</strong><br>Texture makes surfaces believable. Wood requires controlled irregularity, which trains your eye to observe subtle patterns and replicate them accurately.</p><p><strong>Skills developed:</strong></p><ul><li>Textural linework and pattern</li><li>Controlled shading for depth</li><li>Surface variation and realism</li><li>Attention to detail</li></ul><p>It strengthens your ability to depict natural materials and environments.</p>",
+    "description": "Willow is struggling with her patterns and needs help. To succeed, you must observe the subtle lines, knots, and grains that make each piece of wood unique, and translate them onto your page with precision and care. This trial will sharpen your skills in texture, line work, and shading as you bring wood to life with your pencil or pen.",
     "requirements": [
       "Study a piece of wood or reference image carefully",
       "Draw realistic wood textures, including grain, knots, and natural patterns",
@@ -350,7 +350,7 @@
       "Produce a finished drawing that clearly represents wood"
     ],
     "rubric": {
-      "overall": "The Woody Grain’s Challenge",
+      "overall": "The Willow Grain’s Challenge",
       "standards": [
         {
           "code": "Art.FA.CR.1.2.IA",
@@ -377,7 +377,7 @@
     "links": [{"type": "Video sample","url": "https://www.youtube.com/watch?v=m8ZcnTuM-eg&t=311s"},
               {"type": "Video sample","url": "https://www.youtube.com/watch?v=0ex5dnJA07k&t=762s"}],
     "reward": " you got money!!!!",
-    "character": "charimage/char7.png",
+    "character": "charimage/char7.gif",
     "style": "",
     "prerequisites": ["quest1"],
     "completed": false,
