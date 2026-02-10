@@ -17,6 +17,8 @@ let questAccepted = loadQuestAccepted(); // Track which quests have been accepte
 let questRewards = loadQuestRewards() || {}; // Reward system
 let deductedRewards = loadDeductedRewards(); // Track total deductions
 
+// Store hotspot positions relative to the map
+let hotspotPositions = {};
 
 // ==========================
 // STUDENT PROFILE SAVE/LOAD
@@ -77,6 +79,7 @@ const pathQuests = {
   sketcherPath: [
     { title: "The Threat of the East", id: "quest30", style: "mvp" },
     { title: "The Master's Table", id: "quest41", style: "mvp" },
+    { title: "The Scroll of Unwritten Fates", id: "quest72", style: "mvp" },
   ],
   watercoloursPath: [
     { title: "The Silent Objects Trial", id: "quest16", style: "mvp" },
@@ -93,16 +96,107 @@ const pathQuests = {
     { title: "The Story Tile of the Hearth", id: "quest56", style: "mvp" },
     { title: "The Bound Spirit", id: "quest57", style: "mvp" },
     { title: "The Citadel of Forms", id: "quest58", style: "mvp" },
-    { title: "The Master Forgemaster’s Covenant", id: "quest68", style: "mvp" },
+    { title: "The Master Forgemaster's Covenant", id: "quest68", style: "mvp" },
+    { title: "The Animist's Awakening", id: "quest70", style: "mvp" },
+    { title: "The Dreamweaver's Gambit", id: "quest71", style: "mvp" },
   ]
 };
+
+// ==========================
+// HOTSPOT POSITIONING
+// ==========================
+function initializeHotspotPositions() {
+  // Get all hotspots and store their positions relative to the map
+  document.querySelectorAll(".hotspot").forEach(hotspot => {
+    const id = hotspot.dataset.city;
+    // Store the original position from data attributes or inline styles
+    const left = hotspot.style.left || hotspot.dataset.left;
+    const top = hotspot.style.top || hotspot.dataset.top;
+    
+    if (left && top) {
+      hotspotPositions[id] = {
+        left: left,
+        top: top
+      };
+      console.log(`Stored position for ${id}:`, hotspotPositions[id]);
+    }
+  });
+  
+  // If no positions stored, calculate them from current layout
+  if (Object.keys(hotspotPositions).length === 0) {
+    calculateHotspotPositions();
+  }
+}
+
+function calculateHotspotPositions() {
+  const mapImage = document.getElementById("map-image");
+  const mapContainer = document.getElementById("map-container");
+  
+  if (!mapImage || !mapContainer) return;
+  
+  // Wait for map to load
+  if (!mapImage.complete) {
+    mapImage.onload = () => calculateHotspotPositions();
+    return;
+  }
+  
+  const mapRect = mapImage.getBoundingClientRect();
+  const containerRect = mapContainer.getBoundingClientRect();
+  
+  document.querySelectorAll(".hotspot").forEach(hotspot => {
+    const id = hotspot.dataset.city;
+    const rect = hotspot.getBoundingClientRect();
+    
+    // Calculate position as percentage of map image
+    const leftPercent = ((rect.left + rect.width/2 - mapRect.left) / mapRect.width) * 100;
+    const topPercent = ((rect.top + rect.height/2 - mapRect.top) / mapRect.height) * 100;
+    
+    hotspotPositions[id] = {
+      left: `${leftPercent}%`,
+      top: `${topPercent}%`
+    };
+    
+    console.log(`Calculated position for ${id}:`, hotspotPositions[id]);
+  });
+}
+
+function updateHotspotPositions() {
+  const mapImage = document.getElementById("map-image");
+  const mapContainer = document.getElementById("map-container");
+  
+  if (!mapImage || !mapContainer) return;
+  
+  const mapRect = mapImage.getBoundingClientRect();
+  const containerRect = mapContainer.getBoundingClientRect();
+  const mapScale = scale || 1;
+  
+  document.querySelectorAll(".hotspot").forEach(hotspot => {
+    const id = hotspot.dataset.city;
+    const position = hotspotPositions[id];
+    
+    if (position) {
+      // Apply the stored position
+      hotspot.style.left = position.left;
+      hotspot.style.top = position.top;
+      
+      // Scale the hotspot with the map
+      hotspot.style.transform = `translate(-50%, -50%) scale(${mapScale})`;
+      
+      // Ensure hotspot is visible on correct map
+      hotspot.style.display = hotspot.dataset.map === currentMap ? "block" : "none";
+      
+      // Adjust z-index
+      hotspot.style.zIndex = "1000";
+    }
+  });
+}
 
 // ==========================
 // LOAD QUESTS JSON & BIND HOTSPOTS
 // ==========================
 document.addEventListener("DOMContentLoaded", () => {
   updateProfileUI();
-   recalculateAllQuestRewards();
+  recalculateAllQuestRewards();
 
   const container = document.getElementById("map-container");
 
@@ -120,11 +214,18 @@ document.addEventListener("DOMContentLoaded", () => {
       
       // Initialize timers for accepted quests
       initializeQuestTimers();
-       initializeQuestList(); // Initialize quest list functionality
+      initializeQuestList(); // Initialize quest list functionality
+      
+      // Initialize hotspot positions
+      setTimeout(() => {
+        initializeHotspotPositions();
+        updateHotspotPositions();
+      }, 500); // Wait for map to load
     
     })
     .catch(err => console.error("Failed to load quests.json:", err));
 
+  // Update hotspot visibility
   updateHotspotVisibility();
 
   const mapSelector = document.getElementById("map-selector");
@@ -155,6 +256,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (container) {
       container.style.transform = `scale(${scale})`;
+      // Update hotspot positions after zoom
+      setTimeout(updateHotspotPositions, 10);
     }
   }, { passive: false });
 
@@ -243,9 +346,7 @@ function bindHotspots() {
 // UPDATE HOTSPOT VISIBILITY
 // ==========================
 function updateHotspotVisibility() {
-  document.querySelectorAll(".hotspot").forEach(h => {
-    h.style.display = h.dataset.map === currentMap ? "block" : "none";
-  });
+  updateHotspotPositions(); // Use the new positioning function
 }
 
 // ==========================
@@ -255,10 +356,15 @@ function switchMap(mapId) {
   if (!MAPS[mapId]) return;
 
   currentMap = mapId;
-  document.getElementById("map-image").src = MAPS[mapId].image;
-  updateHotspotVisibility();
-  closeQuest();
-
+  const mapImage = document.getElementById("map-image");
+  mapImage.src = MAPS[mapId].image;
+  
+  // Wait for new map to load before updating hotspots
+  mapImage.onload = () => {
+    updateHotspotPositions();
+    closeQuest();
+  };
+  
   const mapSelector = document.getElementById("map-selector");
   if (mapSelector) mapSelector.value = mapId;
 }
@@ -1835,7 +1941,7 @@ function renderRadarChart() {
 
     if (!found) {
       for (const lbl of labelPositions) {
-        const dist = Math.hypot(mouseX - lbl.x, mouseY - lbl.y);
+        const dist = Math.hypt(mouseX - lbl.x, mouseY - lbl.y);
         if (dist < 40) {
           tooltip.innerText = radarDescriptions[lbl.label];
           tooltip.style.opacity = 1;
@@ -3357,57 +3463,34 @@ function initializeTouchEvents() {
 
 // Adjust hotspot positions for different screen sizes
 function adjustHotspotPositions() {
-  const baseWidth = 813;
-  const baseHeight = 585;
-  const currentWidth = window.innerWidth;
-  const currentHeight = window.innerHeight;
-  
-  // Only adjust if significantly different from base size
-  if (currentWidth < 768 || currentHeight < 600) {
-    const scaleX = currentWidth / baseWidth;
-    const scaleY = currentHeight / baseHeight;
-    const scale = Math.min(scaleX, scaleY);
-    
-    document.querySelectorAll('.hotspot').forEach(hotspot => {
-      const top = parseFloat(hotspot.style.top);
-      const left = parseFloat(hotspot.style.left);
-      
-      if (!isNaN(top) && !isNaN(left)) {
-        // Adjust position based on scale
-        hotspot.style.top = `${top * scaleY}%`;
-        hotspot.style.left = `${left * scaleX}%`;
-      }
-    });
-  }
+  // This function is now handled by updateHotspotPositions()
+  updateHotspotPositions();
 }
 
 // Initialize responsive behaviors
 function initializeResponsiveBehaviors() {
   // Handle initial load
   handleOrientationChange();
-  adjustHotspotPositions();
+  updateHotspotPositions();
   initializeTouchEvents();
   
   // Add event listeners
   window.addEventListener('resize', () => {
     handleOrientationChange();
-    adjustHotspotPositions();
+    updateHotspotPositions();
   });
   
   window.addEventListener('orientationchange', () => {
     setTimeout(() => {
       handleOrientationChange();
-      adjustHotspotPositions();
+      updateHotspotPositions();
     }, 300);
   });
 }
 
 // Add to your existing DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", () => {
-  // ... your existing code ...
   
   // Add responsive initialization
   initializeResponsiveBehaviors();
-  
-  // ... rest of your code ...
 });
