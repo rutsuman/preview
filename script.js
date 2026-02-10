@@ -79,6 +79,7 @@ const pathQuests = {
   sketcherPath: [
     { title: "The Threat of the East", id: "quest30", style: "mvp" },
     { title: "The Master's Table", id: "quest41", style: "mvp" },
+    { title: "The Scroll of Unwritten Fates", id: "quest72", style: "mvp" },
   ],
   watercoloursPath: [
     { title: "The Silent Objects Trial", id: "quest16", style: "mvp" },
@@ -3496,4 +3497,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // ... rest of your code ...
 });
+
 
