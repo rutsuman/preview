@@ -427,7 +427,7 @@
       {"type": "Video sample","url": "https://www.youtube.com/watch?v=igEfTMV3Bbc"},
       {"type": "Video sample","url": "https://www.youtube.com/watch?v=EVvyxjb4hn4"}],
     "reward": " you got money!!!!",
-    "character": "charimage/char8.png",
+    "character": "charimage/char8.gif",
     "style": "",
     "prerequisites": ["quest1"],
     "completed": false,
