@@ -96,6 +96,8 @@ const pathQuests = {
     { title: "The Bound Spirit", id: "quest57", style: "mvp" },
     { title: "The Citadel of Forms", id: "quest58", style: "mvp" },
     { title: "The Master Forgemaster's Covenant", id: "quest68", style: "mvp" },
+    { title: "The Animist's Awakening", id: "quest70", style: "mvp" },
+    { title: "The Dreamweaver's Gambit", id: "quest71", style: "mvp" },
   ]
 };
 
@@ -3494,3 +3496,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // ... rest of your code ...
 });
+
