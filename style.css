@@ -436,17 +436,17 @@ overflow: auto;
 /* Text */
 .welcome-scroll h1 {
   font-size: clamp(26px, 4vw, 42px);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .welcome-scroll p {
   font-size: clamp(14px, 1.6vw, 18px);
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 /* Button */
 #welcome-close {
-  padding: 12px 28px;
-  font-size: 18px;
+  padding: 10px 25px;
+  font-size: 16px;
   border: 2px solid #7b5a2b;
   background: #f0d9a7;
   cursor: pointer;
@@ -468,7 +468,7 @@ overflow: auto;
 .character-card img {
   width: 90px;
   height: 90px;
-  object-fit: contain;
+  object-fit: center;
 }
 /* ==========================
    RUBRIC POPUP (Quest-style)
@@ -2486,6 +2486,7 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
 
 
