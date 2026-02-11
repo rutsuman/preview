@@ -26,7 +26,7 @@ html, body {
 
 /* Hotspots */
 .hotspot {
-     position: absolute !important;
+    position: absolute !important;
     transform: translate(-50%, -50%) !important;
     cursor: pointer !important;
     width: 4% !important;
@@ -651,7 +651,7 @@ overflow: auto;
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,0.65);
-  z-index: 999;
+  z-index: 9999;
 }
 
 /* POPUP (match quest style) */
@@ -2486,6 +2486,7 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
 
 
