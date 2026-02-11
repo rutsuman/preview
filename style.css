@@ -395,7 +395,7 @@ select:focus {
 /* Scroll wrapper */
 .welcome-scroll {
   position: relative;
-  width: 100%;
+  width: 70%;
   height: 80vh;
   background: url('scroll.png') center/contain no-repeat;
 
@@ -411,19 +411,13 @@ select:focus {
 }
 /* Body content */
 .scroll-body {
-  width: 95%;
+  width: 65%;
+overflow: auto;
   text-align: center;
   color: #000000;
   font-family: 'Georgia', serif;
   z-index: 2;
-
-  /* AUTO FIT TEXT */
   font-size: clamp(16px, 2.2vw, 20px);
-
-  /* SCROLL IF TOO LONG */
-  max-height: 60vh;
-  overflow-y: auto;
-  padding-right: 10px;
 }
 /* Scrollbar styling */
 .scroll-body::-webkit-scrollbar {
@@ -2492,4 +2486,5 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
