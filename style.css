@@ -1445,12 +1445,6 @@ overflow: auto;
     text-align: center;
     min-height: 40px;
 }
-/* Timer cell hover effect */
-.timer-cell:hover {
-    border-color: rgba(150,200,255,1);
-    box-shadow: 0 0 10px rgba(150,200,255,0.5);
-    transition: all 0.3s ease;
-}
 /* For completed quests */
 #quest-box.completed .timer-cell {
     background-color: rgba(0, 0, 0, 0.4);
@@ -2486,6 +2480,7 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
 
 
