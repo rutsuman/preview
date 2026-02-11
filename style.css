@@ -395,7 +395,7 @@ select:focus {
 /* Scroll wrapper */
 .welcome-scroll {
   position: relative;
-  width: 70%;
+  width: 65%;
   height: 80vh;
   background: url('scroll.png') center/contain no-repeat;
 
@@ -411,7 +411,7 @@ select:focus {
 }
 /* Body content */
 .scroll-body {
-  width: 65%;
+  width: 58%;
 overflow: auto;
   text-align: center;
   color: #000000;
@@ -2486,5 +2486,6 @@ input:focus,
     font-size: 16px; /* Prevents automatic zoom on iOS */
   }
 }
+
 
 
